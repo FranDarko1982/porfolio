@@ -25,13 +25,18 @@
   <div class="relative mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-10 md:px-8 lg:px-12">
     <!-- Header -->
     <header class="mb-10 flex items-center justify-between md:mb-14 animate-fade">
-      <div class="space-y-1">
-        <h1 class="text-[11px] uppercase tracking-[0.35em] text-slate-400">
-          Darko Dev
-        </h1>
-        <h2 class="text-3xl font-semibold text-slate-50 md:text-4xl">
-          Data & Web Solutions
-        </h2>
+      <div class="brand">
+        <div class="brand-mark">
+          <img src="assets/logo.png" alt="Darko Dev logo" loading="lazy" />
+        </div>
+        <div class="brand-wordmark space-y-1">
+          <h1 class="text-[11px] uppercase tracking-[0.35em] text-slate-400">
+            Darko Dev
+          </h1>
+          <h2 class="text-3xl font-semibold text-slate-50 md:text-4xl">
+            Data & Web Solutions
+          </h2>
+        </div>
       </div>
       <nav class="hidden items-center gap-6 text-sm text-slate-300 md:flex">
         <a href="#projects" class="transition hover:text-white">Proyectos</a>
@@ -74,7 +79,7 @@
         </div>
 
         <!-- “Tarjeta” lateral tipo resumen -->
-        <div class="panel animate-fade-up anim-delay-1">
+        <div class="panel panel-hot animate-fade-up anim-delay-1">
           <p class="text-[11px] font-medium uppercase tracking-[0.32em] text-slate-400">
             Stack actual
           </p>
@@ -119,7 +124,7 @@
 
       <div class="grid gap-5 md:grid-cols-3">
         <!-- Proyecto 1 -->
-        <article class="card-grid group flex flex-col p-5 transition duration-300 hover:-translate-y-1.5 hover:border-pink-500/70 hover:shadow-pink-500/10">
+        <a href="proyecto-reserva-salas.html" class="card-grid group flex flex-col p-5 transition duration-300 hover:-translate-y-1.5 hover:border-pink-500/70 hover:shadow-pink-500/10">
           <h4 class="text-sm font-semibold text-slate-50">
             Reserva de Salas (Apps Script)
           </h4>
@@ -132,10 +137,10 @@
             <span class="rounded-full bg-slate-800 px-2 py-0.5">FullCalendar</span>
             <span class="rounded-full bg-slate-800 px-2 py-0.5">Email notif.</span>
           </div>
-        </article>
+        </a>
 
         <!-- Proyecto 2 -->
-        <article class="card-grid group flex flex-col p-5 transition duration-300 hover:-translate-y-1.5 hover:border-pink-500/70 hover:shadow-pink-500/10">
+        <a href="proyecto-bolsa-horas.html" class="card-grid group flex flex-col p-5 transition duration-300 hover:-translate-y-1.5 hover:border-pink-500/70 hover:shadow-pink-500/10">
           <h4 class="text-sm font-semibold text-slate-50">
             Bolsa de Horas (Apps Script)
           </h4>
@@ -148,10 +153,10 @@
             <span class="rounded-full bg-slate-800 px-2 py-0.5">Google Sheets</span>
             <span class="rounded-full bg-slate-800 px-2 py-0.5">Roles &amp; permisos</span>
           </div>
-        </article>
+        </a>
 
         <!-- Proyecto 3 -->
-        <article class="card-grid group flex flex-col p-5 transition duration-300 hover:-translate-y-1.5 hover:border-pink-500/70 hover:shadow-pink-500/10">
+        <a href="proyecto-panel-logistico.html" class="card-grid group flex flex-col p-5 transition duration-300 hover:-translate-y-1.5 hover:border-pink-500/70 hover:shadow-pink-500/10">
           <h4 class="text-sm font-semibold text-slate-50">
             Panel Logístico
           </h4>
@@ -164,7 +169,7 @@
             <span class="rounded-full bg-slate-800 px-2 py-0.5">ETL ligero</span>
             <span class="rounded-full bg-slate-800 px-2 py-0.5">Visualización</span>
           </div>
-        </article>
+        </a>
       </div>
     </section>
 

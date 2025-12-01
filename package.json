@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch",
-    "build": "mkdir -p dist && cp src/index.html dist/index.html && tailwindcss -i ./src/input.css -o ./dist/style.css --minify"
+    "build": "mkdir -p dist && cp src/*.html dist/ && cp -r src/assets dist/ 2>/dev/null || true && tailwindcss -i ./src/input.css -o ./dist/style.css --minify"
   },
   "repository": {
     "type": "git",
