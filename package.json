@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "build": "tailwindcss -i ./src/input.css -o ./dist/style.css --minify",
+  "dev": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranDarko1982/porfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranDarko1982/porfolio/issues"
+  },
+  "homepage": "https://github.com/FranDarko1982/porfolio#readme",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.4"
+  }
+}

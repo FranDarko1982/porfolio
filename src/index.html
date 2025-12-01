@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Darko Dev — Data & Web Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../dist/style.css">
+
+  <!-- Fuente opcional -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body class="relative min-h-screen bg-primary text-accent font-sans overflow-x-hidden">
+  <!-- Fondo dinámico -->
+  <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden="true">
+    <div class="absolute inset-0 radial-gradient opacity-70"></div>
+    <div class="bg-sheen"></div>
+    <div class="absolute inset-0 bg-noise opacity-15 mix-blend-soft-light"></div>
+  </div>
+
+  <div class="relative mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-10 md:px-8 lg:px-12">
+    <!-- Header -->
+    <header class="mb-10 flex items-center justify-between md:mb-14 animate-fade">
+      <div class="space-y-1">
+        <h1 class="text-[11px] uppercase tracking-[0.35em] text-slate-400">
+          Darko Dev
+        </h1>
+        <h2 class="text-3xl font-semibold text-slate-50 md:text-4xl">
+          Data & Web Solutions
+        </h2>
+      </div>
+      <nav class="hidden items-center gap-6 text-sm text-slate-300 md:flex">
+        <a href="#projects" class="transition hover:text-white">Proyectos</a>
+        <a href="#about" class="transition hover:text-white">Sobre mí</a>
+        <a href="#contact" class="transition hover:text-white">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="mb-16 md:mb-20">
+      <div class="grid gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,1.2fr)] md:items-center">
+        <div class="animate-fade-up">
+          <p class="text-xs uppercase tracking-[0.3em] text-punch">
+            Data · Automatización · Apps Script
+          </p>
+          <h3 class="mt-5 text-4xl font-semibold leading-[1.15] md:text-[2.7rem]">
+            Soluciones a medida para
+            <span class="block text-punch">equipos que viven en hojas de cálculo.</span>
+          </h3>
+          <p class="mt-6 text-sm text-muted md:text-base md:max-w-2xl">
+            Diseño y desarrollo de herramientas internas:
+            paneles, automatizaciones y aplicaciones web
+            sobre Google Workspace que ahorran tiempo y quitan ruido operativo.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              href="#projects"
+              class="btn-primary cta-glow rounded-full px-6 py-3 text-sm font-semibold transition"
+            >
+              Ver proyectos
+            </a>
+            <a
+              href="#contact"
+              class="btn-ghost rounded-full px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-pink-400 hover:text-pink-200 cta-glow"
+            >
+              Hablemos
+            </a>
+          </div>
+        </div>
+
+        <!-- “Tarjeta” lateral tipo resumen -->
+        <div class="panel animate-fade-up anim-delay-1">
+          <p class="text-[11px] font-medium uppercase tracking-[0.32em] text-slate-400">
+            Stack actual
+          </p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-200">
+            <li class="flex items-center justify-between">
+              <span>Google Apps Script</span>
+              <span class="rounded-full bg-slate-800 px-2 py-0.5 text-[11px] text-slate-300">
+                Backend
+              </span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span>HTML · CSS · JS</span>
+              <span class="rounded-full bg-slate-800 px-2 py-0.5 text-[11px] text-slate-300">
+                Front
+              </span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span>Dashboards &amp; Reporting</span>
+              <span class="rounded-full bg-slate-800 px-2 py-0.5 text-[11px] text-slate-300">
+                Data
+              </span>
+            </li>
+          </ul>
+          <p class="mt-5 text-xs text-slate-400">
+            Foco en automatizar tareas repetitivas, reducir errores
+            y dar visibilidad clara a los equipos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects" class="mb-16 animate-fade-up anim-delay-1">
+      <div class="mb-6 flex items-baseline justify-between gap-4">
+        <h3 class="text-lg font-semibold text-slate-50 md:text-xl">
+          Proyectos seleccionados
+        </h3>
+        <p class="text-xs text-slate-400">
+          Apps internas · Apps Script · Dashboards
+        </p>
+      </div>
+
+      <div class="grid gap-5 md:grid-cols-3">
+        <!-- Proyecto 1 -->
+        <article class="card-grid group flex flex-col p-5 transition duration-300 hover:-translate-y-1.5 hover:border-pink-500/70 hover:shadow-pink-500/10">
+          <h4 class="text-sm font-semibold text-slate-50">
+            Reserva de Salas (Apps Script)
+          </h4>
+          <p class="mt-2 flex-1 text-xs text-muted">
+            Aplicación web para gestionar reservas de salas de formación:
+            calendario, permisos por rol, notificaciones y panel de control.
+          </p>
+          <div class="mt-3 flex flex-wrap gap-2 text-[11px] text-slate-300">
+            <span class="rounded-full bg-slate-800 px-2 py-0.5">Apps Script</span>
+            <span class="rounded-full bg-slate-800 px-2 py-0.5">FullCalendar</span>
+            <span class="rounded-full bg-slate-800 px-2 py-0.5">Email notif.</span>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="card-grid group flex flex-col p-5 transition duration-300 hover:-translate-y-1.5 hover:border-pink-500/70 hover:shadow-pink-500/10">
+          <h4 class="text-sm font-semibold text-slate-50">
+            Bolsa de Horas (Apps Script)
+          </h4>
+          <p class="mt-2 flex-1 text-xs text-muted">
+            Sistema centralizado para gestionar horas extra y libranzas,
+            con flujos de validación por responsable y registro histórico.
+          </p>
+          <div class="mt-3 flex flex-wrap gap-2 text-[11px] text-slate-300">
+            <span class="rounded-full bg-slate-800 px-2 py-0.5">Apps Script</span>
+            <span class="rounded-full bg-slate-800 px-2 py-0.5">Google Sheets</span>
+            <span class="rounded-full bg-slate-800 px-2 py-0.5">Roles &amp; permisos</span>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="card-grid group flex flex-col p-5 transition duration-300 hover:-translate-y-1.5 hover:border-pink-500/70 hover:shadow-pink-500/10">
+          <h4 class="text-sm font-semibold text-slate-50">
+            Panel Logístico
+          </h4>
+          <p class="mt-2 flex-1 text-xs text-muted">
+            Panel de seguimiento para planificación y ocupación:
+            consolidación de fuentes, métricas clave y vistas para equipo gestor.
+          </p>
+          <div class="mt-3 flex flex-wrap gap-2 text-[11px] text-slate-300">
+            <span class="rounded-full bg-slate-800 px-2 py-0.5">Reporting</span>
+            <span class="rounded-full bg-slate-800 px-2 py-0.5">ETL ligero</span>
+            <span class="rounded-full bg-slate-800 px-2 py-0.5">Visualización</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="about" class="mb-12 max-w-2xl text-sm text-muted animate-fade-up anim-delay-2">
+      <h3 class="mb-3 text-lg font-semibold text-slate-50 md:text-xl">
+        Sobre mí
+      </h3>
+      <p class="mb-2">
+        Combino análisis de datos con desarrollo ligero de herramientas internas.
+        Me suelo mover entre Google Apps Script, hojas de cálculo y pequeñas
+        webapps para automatizar procesos del día a día.
+      </p>
+      <p>
+        Me interesa especialmente todo lo que ahorra tiempo a equipos de
+        planificación y operaciones: menos tareas manuales, menos errores,
+        más foco en decisiones.
+      </p>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="mb-12 animate-fade-up anim-delay-3">
+      <div class="panel p-6 text-sm text-slate-200">
+        <h3 class="text-lg font-semibold text-slate-50 md:text-xl">
+          ¿Hablamos?
+        </h3>
+        <p class="mt-2 text-sm text-muted">
+          Si quieres comentar una idea, revisar un proceso o prototipar
+          una herramienta interna, podemos empezar con un intercambio rápido:
+          qué problema tienes ahora y qué te gustaría que pasara.
+        </p>
+        <!-- Sustituye por tu correo cuando quieras -->
+        <a
+          href="mailto:tu-correo@ejemplo.com"
+          class="mt-4 inline-flex rounded-full bg-cta px-5 py-2.5 text-sm font-semibold text-primary shadow-lg shadow-pink-500/30 transition cta-glow"
+        >
+          Enviar email
+        </a>
+      </div>
+    </section>
+
+    <footer class="mt-auto border-t border-slate-800/60 pt-6 text-xs text-slate-500">
+      © <span id="year"></span> Darko Dev — Data &amp; Web Solutions
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
